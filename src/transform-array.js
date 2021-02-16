@@ -14,13 +14,12 @@ module.exports = function transform(arr) {
       //arr2.splice(i, 1)
     }
     else if(arr2[i]=='--discard-next' && i!=(arr2.length-1)){
-      delete arr2[i]
-      delete arr2[i+1]
-      //arr2.splice(i, 1)
-      //arr2.splice(i+1, 1)
+   
+      arr2.splice(i, 1)
+      arr2.splice(i+1, 1)
     }else if(arr2[i]=='--discard-next' && i==(arr2.length-1)){
-      delete arr2[i]
-      //arr2.splice(i, 1)
+     
+      arr2.splice(i, 1)
     }
     else if(arr2[i]=='--double-next' && i!=(arr2.length-1)){
       
