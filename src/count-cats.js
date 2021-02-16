@@ -6,8 +6,9 @@ module.exports = function countCats(backyard) {
     for(j=0; j<i.length; j++){
       
       if(backyard[i][j]=="^^"){
+        c += 1;
         
-        c++;
+       ;
       }
     }
   }
