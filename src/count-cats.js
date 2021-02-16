@@ -6,7 +6,7 @@ module.exports = function countCats(k) {
   for(i=0; i<k.length; i++){
     for(j=0; j<i.length; j++){
       
-      if(k[i][j]=="^^"){
+      if(k[i][j]=="^^" || k[i][j]=="^ ^"){
         c++;
         return c;
       }
