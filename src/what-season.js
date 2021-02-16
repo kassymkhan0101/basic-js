@@ -6,13 +6,13 @@ module.exports = function getSeason(k) {
   }
   throw new CustomError('Not implemented');
   let mon = getMonth(k)
-  if(k==0 || k==1 ||k==2){
+  if(mon==0 || mon==1 ||mon==2){
     return 'winter';
-  }else if(k==3 || k==4 ||k==5){
+  }else if(mon==3 || mon==4 ||mon==5){
     return 'spring';
-  }else if(k==6 || k==7 ||k==8){
+  }else if(mon==6 || mon==7 ||mon==8){
     return 'summer';
-  }else if(k==9 || k==10 ||k==11){
+  }else if(mon==9 || mon==10 ||mon==11){
     return 'autumn';
   }else{
     throw new Error('Error');
