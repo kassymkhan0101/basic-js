@@ -37,5 +37,6 @@ module.exports = function transform(arr) {
       delete arr2[i]
       //arr2.splice(i, 1)
   }}
-  return arr2;
+  let filtered = arr2.filter(Boolean);
+  return filtered;
 };
