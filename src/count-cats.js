@@ -1,12 +1,12 @@
 const CustomError = require("../extensions/custom-error");
 let c = 0;
-module.exports = function countCats(k) {
+module.exports = function countCats(backyard) {
   throw new CustomError('Not implemented');
   
-  for(i=0; i<k.length; i++){
+  for(i=0; i<backyard.length; i++){
     for(j=0; j<i.length; j++){
       
-      if(k[i][j]=="^^" || k[i][j]=="^ ^"){
+      if(backyard[i][j]=="^^" || backyard[i][j]=="^ ^"){
         c++;
         return c;
       }
