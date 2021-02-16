@@ -1,6 +1,9 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function getSeason(k) {
+  if(k==null){
+    return 'Unable to determine the time of year!';
+  }
   let c = k.getMonth();
   if(c==11 || c==0 ||c==1){
     return 'winter';
