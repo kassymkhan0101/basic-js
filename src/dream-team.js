@@ -10,7 +10,8 @@ module.exports = function createDreamTeam(arr) {
       names.push(arr[i].trim().charAt(0));
     }
   }
-  return names.sort().join("").toUpperCase();
+  let c = names.sort().join("").toUpperCase();
+  return c.split("").sort().join("");
   
   
 };
